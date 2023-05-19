@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Designed on a Admin Dashboard using Html, CSS, JavaScript</title>
+    <link rel="stylesheet" href="CssOnAdminDashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="warning">
+        <h2>Sorry, this page doesn't support your device, Please use laege screen device to see this page.</h2>
+    </div>
+
+    <section>
+        <!-- User Slide-Bar Start. -->
+        <div class="navbar" id="navigation">
+            <img src="mukul.jpg" alt="">
+            <ul class="center-nav">
+                <li><i class="fa-solid fa-house"><a href="#">Dashboard</a></i></li>
+                <li><i class="fa-solid fa-copy"><a href="#">Content</a></i></li>
+                <li><i class="fa-sharp fa-solid fa-chart-simple"><a href="#">Analytics</a></i></li>
+                <li><i class="fa-solid fa-thumbs-up"><a href="#">Likes</a></i></li>
+                <li><i class="fa-solid fa-comment"><a href="#">Comments</a></i></li>
+                <li><i class="fa-sharp fa-solid fa-floppy-disk"><a href="#">Saves</a></i></li>
+                <li><i class="fa-solid fa-share"><a href="#">Share</a></i></li>
+                <li><i class="fa-solid fa-rectangle-ad"><a href="#">Ads</a></i></li>
+            </ul>
+            <ul class="bottom-nav">
+                <hr>
+                <li><i class="fa-solid fa-gear"><a href="#">Setting</a></i></li>
+                <li><i class="fa-solid fa-power-off"><a href="#">Log Out</a></i></li>
+            </ul>
+        </div>
+        <!-- User Slide-Bar End. -->
+
+        <!-- User top Navigation Start -->
+        <div class="main-content">
+            <div class="main-top">
+                <div class="bars" id="menu" value="click">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Search here.... ">
+                </div>
+                <div class="user">
+                    <a href="https://www.instagram.com/rajputmraghav/"><img src="IMG_20221223_170817_199.jpg" alt="Mukul-Raghav"> </a>
+                </div>
+            </div>
+            <!-- User top Navigation End. -->
+
+            <!-- User-Dash-Board Start -->
+            <div class="dashboard">
+                <h2 class="heading">DashBoard</h2>
+                <div class="color-box">
+                    <div class="box skyblue">
+                        <p><i class="fa-solid fa-thumbs-up"></i></p>
+                        <p>Total Likes</p>
+                        <h2>50,120</h2>
+                    </div>
+                    <div class="box yellow">
+                        <p><i class="fa-solid fa-comment"></i></p>
+                        <p>Total Comments</p>
+                        <h2>25,100</h2>
+                    </div>
+                    <div class="box purple">
+                        <p><i class="fa-solid fa-share"></i></p>
+                        <p>Total Share</p>
+                        <h2>18,136</h2>
+                    </div>
+                    <div class="box red">
+                        <p><i class="fa-sharp fa-solid fa-floppy-disk"></i></p>
+                        <p>Total Saves</p>
+                        <h2>19,238</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- User Dash-Board End. -->
+
+            <!-- User Activity Start -->
+            <div class="activity">
+                <h2 class="heading"> Recent Activity </h2>
+                <div class="activities">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Joined</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Raju</td>
+                                <td>contact.geekshelp@gmail.com</td>
+                                <td>01-01-2020</td>
+                                <td>Member</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Jassi</td>
+                                <td>jassisheoran@gmail.com</td>
+                                <td>03-01-2022</td>
+                                <td>New</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>johndoe@gmail.com</td>
+                                <td>27-10-2020</td>
+                                <td>Member</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Franda</td>
+                                <td>franda.geekshelp@gmail.com</td>
+                                <td>22-12-2020</td>
+                                <td>Member</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Raj</td>
+                                <td>testmain@gmail.com</td>
+                                <td>20-12-2019</td>
+                                <td>New</td>
+                                <td>Active</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- <script>
+    const hamburger=document.getElementById('menu');
+    const navigation=document.getElementById('navigation');
+    hamburger.addEventListener('click', function() {
+        navigation.classList.toggle('active')
+        console.log("clicked");
+    })
+</script> -->
+<script>
+    const hamburger=document.getElementById("menu");
+    const navigation=document.getElementById("navigation");
+    hamburger.addEventListener('click', function() {
+        navigation.classList.toggle('active')
+        console.log('clicked');
+    })
+</script>
+</html>
